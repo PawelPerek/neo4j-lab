@@ -1,0 +1,4 @@
+CALL gds.pageRank.stream("deezer")
+YIELD nodeId, score
+RETURN nodeId, score
+ORDER BY score DESC

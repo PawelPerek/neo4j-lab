@@ -1,0 +1,3 @@
+CALL gds.localClusteringCoefficient.stream("deezer")
+YIELD nodeId, localClusteringCoefficient
+RETURN nodeId, localClusteringCoefficient

@@ -1,0 +1,4 @@
+CALL gds.louvain.stream("deezer")
+YIELD nodeId, communityId
+RETURN nodeId, communityId
+ORDER BY communityId DESC

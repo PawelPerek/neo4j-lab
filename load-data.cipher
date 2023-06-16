@@ -1,0 +1,4 @@
+LOAD CSV WITH HEADERS FROM 'file:////Volumes/HDD/AGH/ask/n4j/HR_edges.csv' AS line
+MERGE (n:Node {id: toInteger(line.node_1)})
+MERGE (m:Node {id: toInteger(line.node_2)})
+MERGE (n)-[:CONNECTS_TO]->(m);

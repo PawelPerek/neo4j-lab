@@ -1,0 +1,4 @@
+CALL gds.alpha.scc.stream("deezer")
+YIELD nodeId, componentId
+RETURN nodeId, componentId
+ORDER BY componentId

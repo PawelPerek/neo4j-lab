@@ -1,0 +1,4 @@
+CALL gds.betweenness.stream("deezer")
+YIELD nodeId, score
+RETURN nodeId AS node, score
+ORDER BY score DESC
