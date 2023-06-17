@@ -1,6 +1,0 @@
-CALL gds.shortestPath.dijkstra.stream("deezer", {
-    sourceNode: 47,
-    targetNode: 12160
-})
-YIELD nodeIds
-RETURN nodeIds

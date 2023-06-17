@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Neovis.js Simple Example</title>
+    <style type="text/css">
+        html, body {
+            font: 16pt arial;
+        }
+
+        #viz {
+            width: 900px;
+            height: 700px;
+            border: 1px solid lightgray;
+            font: 22pt arial;
+        }
+    </style>
+    <script src="https://unpkg.com/neovis.js@2.0.2"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</head>
+<body>
+<div id="viz"></div>
+Cypher query: <br><textarea rows="16" cols=50 id="cypher"></textarea><br>
+<input type="submit" value="Submit" id="reload">
+<br>
+Select algorithm:
+<button id="show-all">Show all (limit 500)</button>
+<button id="djikstra">Djikstra</button>
+<button id="page-rank">PageRank</button>
+<button id="scc">Strongly connected components</button>
+<button id="cc">Clustering coefficient</button>
+<button id="bc">Betweenness centrality</button>
+</body>
+</html>
